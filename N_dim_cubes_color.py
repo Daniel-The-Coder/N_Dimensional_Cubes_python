@@ -1,17 +1,16 @@
-# import turtle as t
+import turtle as t
 from collections import Iterable
 import random
 import math
 from PIL import Image, ImageDraw
 import time
-import pyautogui
 
 im = Image.new('RGBA', (10, 10), 'white')
 color = "black"
 draw = 0
 dim = 0
 
-# t.speed(10)
+t.speed(10)
 colors = ["red", "blue", "green", "pink", "violet", "yellow"]
 
 
@@ -150,14 +149,6 @@ def drawArg(n):
     end_b = time.time()
     time_b = end_b - start_b
     print("complete.\nTime to create image: ", time_b)
-
-    # print(list((flatten([[ [0,1], [2,3,4] ], [2,5]]))))
-    # print(unFlatten([1,2,3,4,5,6,7,8]))
-    '''
-for i in range(21):
-    createPoints(i)
-    print("\n################################################\n")
-    '''
 
 
 drawArg(16)
